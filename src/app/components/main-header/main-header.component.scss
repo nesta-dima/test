@@ -1,183 +1,107 @@
 @import '../../../styles/variables.scss';
 
-.main-header {
-  color: $black;
-  padding: 80px 0 50px;
-  background: url("../../../../src/assets/images/bg_photo.png");
-  background-repeat: no-repeat;
-  position: relative;
+.main {
+  padding: 50px;
 
-  &__social{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &-item {
-      display: flex;
-      flex-direction: column;
-      padding: 30px 0;
-
-      a{
-        width: 30px;
-        height: 30px;
-        background: white no-repeat center;
-        margin: 10px;
-        border-radius: 50%;
-        transition: all 0.3s;
-        &:hover {
-          box-shadow: 0 0 10px rgba(0,0,0,0.5);
-          cursor: pointer;
-        }
-      }
-
-      a:nth-child(1)  {
-        background-image: url('../../../../src/assets/svg/instagram-black.svg');
-      }
-      a:nth-child(2) {
-        background-image: url('../../../../src/assets/svg/facebook-black.svg');
-      }
-      a:nth-child(3)  {
-        background-image: url('../../../../src/assets/svg/telegram-black.svg');
-      }
-      a:nth-child(4)  {
-        background-image: url('../../../../src/assets/svg/ws-black.svg');
-      }
-
-
-    }
-
-    .line{
-      background: white;
-      flex: 1;
-      width: 1px;
-    }
+  @media(max-width: $desktop){
+    padding: 10px 15px;
   }
 
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    background: linear-gradient(to right, white, transparent 75%, transparent 100%, white);
-
-  }
-  //background-size: contain;
   &__wrapper {
     width: $desktop;
     margin: 0 auto;
-    position: relative;
-    z-index: 2;
+
+    @media(max-width: $desktop){
+      width: 100%
+    }
   }
+
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    @media (max-width: $desktop) {
+      flex-wrap: wrap;
+    }
+
+    & > div {
+      @media (max-width: $desktop) {
+        width: 50%;
+      }
+    }
+  }
+
   &__title{
-    width: 800px;
-    margin-bottom: 60px;
+    color: #1E1E1E;
+    font-weight: bold;
+    font-size: 64px;
 
-    h1 {
-      font-size: 48px;
-      font-weight: 500;
-    }
-    h2 {
-      font-size: 18px;
-
+    @media (max-width: $desktop) {
+      font-size: 34px;
     }
   }
-  &__types-clean{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
-    width: 680px;
-  }
-  &__type{
-    background: #BABEAB;
-    padding: 22px;
-    border-radius: 5px;
-    transition: all .1s;
-    &:hover {
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      cursor: pointer;
-    }
 
-    .cost {
-      border-bottom: 1px solid #4F4D4A;
-      padding: 10px 0;
+  &__social {
+    display: flex;
+    gap: 10px;
+    a {
+      background: black;
+      width: 30px;
+      height: 30px;
       display: flex;
       align-items: center;
+      justify-content: center;
+    }
+  }
 
-      mat-icon{
-        padding-left: 10px;
+  &__content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;
+
+    @media (max-width: $desktop) {
+      flex-wrap: wrap;
+    }
+
+    & > div {
+      flex:1
+    }
+
+    & .left {
+      padding-right: 20px;
+
+      &__title {
+        margin-bottom: 20px;
+        font-size: 14px;
       }
     }
 
-
-    h3 {
-      font-size: 16px;
-      font-weight: bold;
-      margin: 0 0 10px;
-      text-transform: uppercase;
-    }
-  }
-  &__type:nth-child(2){
-    background: #FFB800;
-  }
-  &__type:nth-child(3){
-    background: #85A5A9;
-  }
-  &__type:nth-child(4){
-    background: #A8CACE;
-  }
-}
-
-@media (max-width: 1180px) {
-
-  .main-header {
-    padding: 25px 15px;
-    height: auto;
-
-    &:before{
-      background: linear-gradient(to right, white, transparent 130%, transparent 100%, white);
-    }
-
-    &__social {
-      display: none;
-    }
-    &__wrapper {
-      width: 100%;
-    }
-
-    &__types-clean{
-      width: 100%;
-      gap: 10px;
-    }
-
-    &__type {
-      padding: 10px;
+    & .right {
       text-align: center;
+      font-size: 14px;
 
-      h3{
-        font-size: 13px;
-      }
-      .cost {
-        display: none;
+      img {
+        margin-bottom: 20px;
       }
     }
 
-    &__title{
-      width: 100%;
-      margin-bottom: 20px;
-      h1{
-        font-size: 20px;
-      }
-      h2{
-        font-size: 13px;
-      }
+  }
 
+  &__footer {
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 600px;
+    margin: auto;
+    a{
+      text-transform: none;
+      font-weight: bold;
+      color: black;
+      text-decoration: none;
     }
   }
+
+
 }
