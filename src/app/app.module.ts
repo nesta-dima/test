@@ -17,29 +17,31 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
 declarations: [
 		AppComponent,
 		MainHeaderComponent,
 	],
-	imports: [
-		BrowserModule,
-		AppRoutingModule,
-		BrowserAnimationsModule,
-		MatIconModule,
-		MatToolbarModule,
-		MatButtonModule,
-		MatMenuModule,
-		HttpClientModule,
-		MatButtonToggleModule,
-		MatTooltipModule,
-		MatCheckboxModule,
-		FormsModule,
-		MatFormFieldModule,
-		MatSelectModule,
-		ReactiveFormsModule,
-	],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatMenuModule,
+    HttpClientModule,
+    MatButtonToggleModule,
+    MatTooltipModule,
+    MatCheckboxModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    NgOptimizedImage,
+  ],
 	providers: [AboutCompanyService],
 	bootstrap: [AppComponent],
 })
