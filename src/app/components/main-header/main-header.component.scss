@@ -18,7 +18,7 @@
 
   &__header{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 100px;
 
@@ -37,6 +37,7 @@
     color: #1E1E1E;
     font-weight: bold;
     font-size: 64px;
+    line-height: 45px;
 
     @media (max-width: $desktop) {
       font-size: 34px;
@@ -46,6 +47,12 @@
   &__social {
     display: flex;
     gap: 10px;
+
+    @media (max-width: $desktop) {
+      width: 100% !important;
+      justify-content: center;
+      padding-top: 30px;
+    }
 
     img {
       width: 20px;
@@ -81,16 +88,29 @@
 
     & .left {
       padding-right: 20px;
+      max-width: 310px;
+      text-transform: uppercase;
+      color: rgba(0,0,0,.5);
 
       &__title {
         margin-bottom: 20px;
         font-size: 14px;
+        line-height: 20px;
       }
     }
 
     & .right {
       text-align: center;
       font-size: 14px;
+      max-width: 310px;
+
+      &__title{
+        text-align: left;
+        text-transform: uppercase;
+        color: rgba(0,0,0,.5);
+        line-height: 20px;
+
+      }
 
       img {
         margin-bottom: 20px;
@@ -102,6 +122,7 @@
   &__middle{
     > div {
       overflow: hidden;
+      text-align: center;
     }
 
     img {
