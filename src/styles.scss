@@ -35,5 +35,28 @@ $test-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+  font-family: 'CustomFontBold';
+  src: url('./assets/fonts/SportingGrotesque-Bold.otf') format('otf'),
+  url('./assets/fonts/SportingGrotesque-Bold.otf') format('otf');
+  //font-weight: 300;
+  //font-style: normal;
+}
+@font-face {
+  font-family: 'CustomFontRegular';
+  src: url('./assets/fonts/SportingGrotesque-Regular.otf') format('otf'),
+  url('./assets/fonts/SportingGrotesque-Regular.otf') format('otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,500;1,200&display=swap');
+
+$font-primary: 'CustomFont', sans-serif;
+$font-secondary: 'Arial', sans-serif;
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: #F1F0EF }
+body {
+  margin: 0;
+  font-family: Kanit,
+  "Helvetica Neue", sans-serif;
+  background: url('./assets/images/noize.png') repeat;
+}

@@ -1,0 +1,25 @@
+<div class="header">
+  <div class="header-logo" routerLink="/">
+    <mat-icon svgIcon="custom-logo"></mat-icon>
+  </div>
+  <button (click)="openMenu()" [class.active]="isMenuOpen">
+    <span></span>
+  </button>
+</div>
+<div class="header-menu" *ngIf="isMenuOpen">
+  <ul>
+    <li *ngFor="let route of routes">
+      <div (click)="toRoute(route.path)">{{route.locales[language].value}}</div>
+    </li>
+    <button mat-button [matMenuTriggerFor]="menu">{{language === 'en'? 'English':'Русский' }} </button>
+  </ul>
+
+</div>
+
+
+<mat-menu #menu="matMenu">
+  <button *ngIf="language === 'ru'; else button" mat-menu-item (click)="setLanguage('en')">English</button>
+  <ng-template #button>
+    <button mat-menu-item (click)="setLanguage('ru')">Русский</button>
+  </ng-template>
+</mat-menu>

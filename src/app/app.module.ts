@@ -18,11 +18,21 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import {NgOptimizedImage} from "@angular/common";
+import { RootComponent } from './components/pages/root/root.component';
+import { HeaderMenuComponent } from './components/shared/header-menu/header-menu.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { AboutUsComponent } from './components/pages/about-us/about-us.component';
+import { ServicesComponent } from './components/pages/services/services.component';
 
 @NgModule({
 declarations: [
 		AppComponent,
 		MainHeaderComponent,
+  RootComponent,
+  HeaderMenuComponent,
+  FooterComponent,
+  AboutUsComponent,
+  ServicesComponent,
 	],
   imports: [
     BrowserModule,
