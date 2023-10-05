@@ -1,10 +1,6 @@
-<!--<div class="root">-->
-<!--  <div class="wrapper">-->
-<!--    <app-header-menu></app-header-menu>-->
-    <ng-container *ngIf="!isMenuOpen">
-      <h1>THE SOURCE</h1>
-      <img [src]='getUrl' alt="the source" />
-    </ng-container>
-    <ng-container *ngIf="!isMenuOpen"><app-footer></app-footer></ng-container>
-<!--  </div>-->
-<!--</div>-->
+<ng-container *ngIf="!isMenuOpen">
+  <h1>THE SOURCE</h1>
+  <img [src]='getUrl' alt="the source" />
+</ng-container>
+<ng-container *ngIf="!isMenuOpen"><app-footer></app-footer></ng-container>
+

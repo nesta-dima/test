@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { MenuService } from '../../../services/menu.service';
 import { Router } from '@angular/router';
-import { LocaleService } from '../../../services/locale.service';
+import { TranslateService } from '@ngx-translate/core';
 
 type Language = 'en' | 'ru';
 interface IRoute {
   path: string;
-  locales: Record<Language, { value: string }>;
+  text: string;
 }
 interface Routes {
   language: Language;
@@ -23,69 +23,27 @@ export class HeaderMenuComponent {
   routes: IRoute[] = [
     {
       path: 'about-us',
-      locales: {
-        ['en']: {
-          value: 'about us',
-        },
-        ['ru']: {
-          value: 'О нас',
-        },
-      },
+      text: 'menu.aboutUs',
     },
     {
       path: 'services',
-      locales: {
-        ['en']: {
-          value: 'services',
-        },
-        ['ru']: {
-          value: 'услуги',
-        },
-      },
+      text: 'menu.services',
     },
     {
       path: 'stages-of-work',
-      locales: {
-        ['en']: {
-          value: 'stages of work',
-        },
-        ['ru']: {
-          value: 'этапы работы',
-        },
-      },
+      text: 'menu.stagesOfWork',
     },
     {
       path: 'team',
-      locales: {
-        ['en']: {
-          value: 'team',
-        },
-        ['ru']: {
-          value: 'команда',
-        },
-      },
+      text: 'menu.team',
     },
     {
       path: 'portfolio',
-      locales: {
-        ['en']: {
-          value: 'portfolio',
-        },
-        ['ru']: {
-          value: 'портфолио',
-        },
-      },
+      text: 'menu.portfolio',
     },
     {
       path: 'contacts',
-      locales: {
-        ['en']: {
-          value: 'contacts',
-        },
-        ['ru']: {
-          value: 'контакты',
-        },
-      },
+      text: 'menu.contacts',
     },
   ];
 
@@ -93,13 +51,14 @@ export class HeaderMenuComponent {
   constructor(
     private menuService: MenuService,
     private router: Router,
-    private localeService: LocaleService,
+    private translate: TranslateService,
   ) {
     this.menuService.menuOpen$.subscribe((isOpen) => {
       this.isMenuOpen = isOpen;
     });
-    this.localeService.locale$.subscribe((locale) => {
-      this.language = locale as Language;
+
+    this.translate.onLangChange.subscribe((event) => {
+      this.language = event.lang as Language;
     });
   }
   openMenu() {
@@ -111,7 +70,7 @@ export class HeaderMenuComponent {
     this.router.navigate([route]);
   }
 
-  setLanguage(en: string) {
-    this.localeService.setLanguage(en);
+  setLanguage(language: string) {
+    this.translate.use(language);
   }
 }

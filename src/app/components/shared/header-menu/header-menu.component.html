@@ -9,7 +9,7 @@
 <div class="header-menu" *ngIf="isMenuOpen">
   <ul>
     <li *ngFor="let route of routes">
-      <div (click)="toRoute(route.path)">{{route.locales[language].value}}</div>
+      <div (click)="toRoute(route.path)" translate>{{route.text}}</div>
     </li>
     <button mat-button [matMenuTriggerFor]="menu">{{language === 'en'? 'English':'Русский' }} </button>
   </ul>

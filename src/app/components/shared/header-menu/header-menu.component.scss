@@ -34,12 +34,15 @@
       width: 120px;
     }
 
-
+    & li{
+      cursor: pointer;
+    }
     & li:not(:last-child){
       margin-bottom: 20px;
     }
   }
   &-logo{
+    cursor: pointer;
     mat-icon {
       width: 130px;
       height: 30px;
@@ -55,6 +58,7 @@
     height: 50px;
     border: none;
     background: transparent;
+    cursor: pointer;
 
     &:before{
       @include lines;
