@@ -1,6 +1,20 @@
 <ng-container *ngIf="!isMenuOpen">
   <div class="services">
-    Services
+    <div class="wrapper">
+      <img src="assets/images/service.main-photo.png">
+      <div class="services-title" translate>page.services.title</div>
+      <div class="services-type">
+        <div *ngFor="let type of types" translate>{{type}}</div>
+      </div>
+      <div class="services-card">
+        <div *ngFor="let item of items">
+          <app-services-card [data]="item"></app-services-card>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <button class="services-button">order service</button>
+    </div>
   </div>
   <app-footer></app-footer>
 </ng-container>

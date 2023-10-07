@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-title" translate>{{data.title }}</div>
+  <div class="card-image" >
+    <img [src]="data.image" #image>
+  </div>
+  <div class="card-description" #description
+       (mouseenter)="onMouseEnter()"
+       (mouseleave)="onMouseLeave()">
+
+    <p *ngFor="let p of data.description" translate>{{p}}</p>
+
+    <div class="card-capabilities">
+      <div class="card-capabilities__title" *ngIf="data.capabilities.length" translate>page.services.cards.capabilitiesTitle</div>
+      <div class="card-capabilities__element">
+        <div *ngFor="let item of data.capabilities" translate>{{item}}</div>
+      </div>
+    </div>
+  </div>
+</div>

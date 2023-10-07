@@ -12,6 +12,73 @@
       "p1": "THE SOURCE La digital boutique is like a made-to-measure atelier, but in our case, we dress brands in this infinite digital world.",
       "p2": "We create unique strategies for every brand or expert, profoundly understanding and feeling the heart of your brand that has a unique vibe and message.",
       "p3": "THE SOURCE is a creative agency that helps businesses clarify and develop their brand, communicate their story, and connect with the right audiences through research, strategy, storytelling, and making design matter."
+    },
+    "services": {
+      "title": "services",
+      "types": {
+        "webDesign&Development": "Web Design & Development",
+        "printCollAterals": "Print Coll Aterals",
+        "packagingDesign": "Packaging Design",
+        "socialMediaStrategyAndManagement": "Social media strategy and management",
+        "brandConsulting": "Brand consulting",
+        "branding(logo&brandId)": "Branding (Logo & Brand Id)"
+      },
+      "cards": {
+        "capabilitiesTitle": "capabilities",
+        "card1": {
+          "title": "BRAND, LOGO AND IDENTITY",
+          "description": {
+            "p1": "We’ll help you identify how to best showcase your business and appeal to your audience through your name, story, logo, identity materials, and brand guidelines",
+            "p2": "Creating a brand is more than just designing the right logo—it’s a comprehensive system that encompasses t   he whole identity of a company, who they serve, and what they offer.",
+            "p3": "As you must be knowing, branding is a crucial aspect of any business and without proper branding, it is going to be a really challenging affair for you to provide your business with organic success and sustainable growth",
+            "p4": "Our approach will not only help you to drive the target audience towards your brand but will also promote business growth.We begin our project by carefully understanding your exact requirements.",
+            "p5": "We will acquire a clear understanding of what your expectations are and then, we will help you out in developing an innovative strategy for your brand."
+          },
+          "capabilities": {
+            "p1": "Brand story",
+            "p2": "Logo design",
+            "p3": "Brand identity",
+            "p4": "Brand Guidelines",
+            "p5": "Identity Management",
+            "p6": "Retail branding",
+            "p7": "Product branding",
+            "p8": "Brand awareness",
+            "p9": "Corporate branding",
+            "p10": "Print and digital collateral"
+          }
+        },
+        "card2": {
+          "title": "SMM",
+          "description": {
+            "p1": "We are building a road map based on holistic content performance and audience response for your brand. We partner with our clients to deliver fully-managed and innovative social media marketing campaigns that touch. With our services, you will easily be able to develop an emotional connection with your audience. They will develop a sense of trust and loyalty towards your brand."
+          },
+          "capabilities": {
+            "p1": "Social Media Strategy",
+            "p2": "Social Media Marketing",
+            "p3": "Full Social Media Management",
+            "p4": "Content creation",
+            "p5": "Photo shooting, video making,editing,story telling",
+            "p6": "Creative campaigns",
+            "p7": "Operational planning",
+            "p8": "Target adds",
+            "p9": "Monthly analytics & reporting ",
+            "p10": "Digital Presentations"
+          }
+        },
+        "card3": {
+          "title": "Web design and development",
+          "description": {
+            "p1": "THE SOURCE La digital boutique specializes in website design and development services. Our web experiences are high-performing, feature-packed and digitally transformative, designed to be user-friendly, fully functional, very secure and able to scale as your enterprise grows.",
+            "p2": "Our website developers provide expert web application development and web design services to our clients."
+          }
+        }
+      },
+      "works": {
+        "card1": {
+          "title": "Web Design & Development",
+          "text": ""
+        }
+      }
     }
   }
 }

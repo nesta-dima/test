@@ -72,5 +72,6 @@ export class HeaderMenuComponent {
 
   setLanguage(language: string) {
     this.translate.use(language);
+    this.menuService.closeMenu();
   }
 }

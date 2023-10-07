@@ -24,6 +24,8 @@ import { AboutUsComponent } from './components/pages/about-us/about-us.component
 import { ServicesComponent } from './components/pages/services/services.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { ServicesCardComponent } from './components/shared/services-card/services-card.component';
+import { ServicesWorkComponent } from './components/shared/services-work/services-work.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -38,6 +40,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     AboutUsComponent,
     ServicesComponent,
+    ServicesCardComponent,
+    ServicesWorkComponent,
   ],
   imports: [
     BrowserModule,

@@ -20,7 +20,6 @@ export class RootComponent {
     });
 
     setInterval(() => {
-      console.log('111', this.index);
       if (this.photos.length === this.index) {
         this.index = 1;
       } else {
