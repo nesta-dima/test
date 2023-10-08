@@ -79,6 +79,21 @@
           "text": ""
         }
       }
+    },
+    "stages": {
+      "title": "stages of work",
+      "card1": {
+        "title": "Research",
+        "description": "At the very beginning we conduct extensive research by gathering every piece of information available to us about you, your customers, products and services, brand knowledge, existing materials, competitors, and more. We ensure to carry out a deep analysis."
+      },
+      "card2": {
+        "title": "DESIGN",
+        "description": "Once we have a full vision the next crucial step is execution. Our team comes up with efficient solutions. We pay meticulous attention to the smallest details and maintain constant communication with our clients to ensure their projects are on track. By gathering feedback, we continually refine, iterate, and perfect our solutions, ensuring they are tailored precisely to your specific requirements."
+      },
+      "card3": {
+        "title": "STRATEGY",
+        "description": "Our primary objective is to ensure customer satisfaction, and we achieve this by creating effective strategies that set you apart from the competition. We take into account the requirements of your business and create a unique approach to your customers."
+      }
     }
   }
 }

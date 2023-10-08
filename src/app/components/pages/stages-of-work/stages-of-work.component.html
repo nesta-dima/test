@@ -1,0 +1,13 @@
+<ng-container *ngIf="!isMenuOpen">
+  <div class="stages">
+    <div class="wrapper">
+      <div class="stages-title" translate>page.stages.title</div>
+      <div class="stages-work">
+        <div *ngFor="let stage of stages">
+          <app-stages-card [data]="stage"></app-stages-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+<ng-container *ngIf="!isMenuOpen"><app-footer></app-footer></ng-container>

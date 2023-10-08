@@ -1,0 +1,48 @@
+.card {
+  position: relative;
+
+  &-title{
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    text-transform: uppercase;
+    width: 100%;
+    padding-top: 25px;
+    font-family: CustomFontRegular, sans-serif;
+
+    @media (max-width: 1280px) {
+      font-size: 30px;
+    }
+  }
+
+  &-description{
+    position: absolute;
+    bottom: 0;
+    font-weight: 200;
+    font-size: 16px;
+    padding: 20px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  img {
+    min-height: 520px;
+    width: 100%;
+  }
+}
+
+.card.active{
+
+    &:before {
+      content: '';
+      background-color: rgba(black, .5);
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  .card-description{
+    opacity: 1;
+  }
+}

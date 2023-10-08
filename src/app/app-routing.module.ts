@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { RootComponent } from './components/pages/root/root.component';
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
 import { ServicesComponent } from './components/pages/services/services.component';
+import { StagesOfWorkComponent } from './components/pages/stages-of-work/stages-of-work.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'services',
     component: ServicesComponent,
+  },
+  {
+    path: 'stages-of-work',
+    component: StagesOfWorkComponent,
   },
   {
     path: '**',
