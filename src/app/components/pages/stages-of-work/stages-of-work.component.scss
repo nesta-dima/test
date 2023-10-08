@@ -10,6 +10,7 @@
 
   @media (max-width: 1280px) {
     padding: 0 15px;
+    margin-bottom: 50px;
   }
 
   &-title{
@@ -23,6 +24,8 @@
     @media (max-width: 1280px) {
       font-size: 20px;
       text-decoration-line: none;
+      padding-top: 20px;
+      margin-bottom: 25px;
     }
   }
   &-work{

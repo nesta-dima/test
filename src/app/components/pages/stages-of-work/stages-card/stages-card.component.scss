@@ -12,7 +12,11 @@
     font-family: CustomFontRegular, sans-serif;
 
     @media (max-width: 1280px) {
-      font-size: 30px;
+      position: static;
+      color: black;
+      text-align: left;
+      font-size: 20px;
+      margin-bottom: 20px;
     }
   }
 
@@ -25,10 +29,22 @@
     color: white;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+
+    @media (max-width: 1280px) {
+      position: static;
+      opacity: 1;
+      color: black;
+      padding: 0;
+    }
   }
   img {
     min-height: 520px;
     width: 100%;
+
+    @media (max-width: 1280px) {
+      min-height: auto;
+      margin-bottom: 20px;
+    }
   }
 }
 
