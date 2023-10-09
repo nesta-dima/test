@@ -1,0 +1,13 @@
+<div class="quote" *ngIf="quotes.length === 1; else restQuotes">
+  <span >{{name| translate}}: </span>
+  "{{quotes[0] | translate}}"
+</div>
+<ng-template #restQuotes>
+  <div class="quote rest">
+    <span>{{name | translate}}: </span>
+    "{{quotes[0] | translate}}
+    <ng-container *ngFor="let quote of quotes; index as i;">
+      <p *ngIf="i !==0">{{quote | translate}}{{quotes.length - 1 === i ? '"' : ''}}</p>
+    </ng-container>
+  </div>
+</ng-template>

@@ -3,3 +3,12 @@ export interface IStages {
   image: string;
   description: string;
 }
+
+export interface ITeam {
+  name: string;
+  position: string;
+  image: string;
+  description: string;
+  interests: string;
+  quotes: string[];
+}

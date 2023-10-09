@@ -1,0 +1,62 @@
+@mixin name{
+  font-family: CustomFontRegular, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+.user{
+  margin-bottom: 20px;
+
+  &__author{
+    min-width: 200px;
+  }
+
+  &__name{
+    @include name;
+  }
+  &__position{
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration-line: underline;
+  }
+  &__description{
+    font-size: 14px;
+    font-weight: 300;
+  }
+  &__interest{
+    margin-bottom: 20px;
+    span{
+      font-family: CustomFontRegular, sans-serif;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+    font-size: 14px;
+    font-weight: 300;
+  }
+  &__quote{
+    p {
+      font-size: 14px;
+      font-weight: 200;
+      font-style: italic;
+    }
+  }
+}
+
+.user-desktop{
+  display: flex;
+  gap: 40px;
+
+  &-revert{
+    flex-direction: row-reverse;
+  }
+
+  &__info {
+    p:first-child {
+      margin-top: 0;
+    }
+  }
+
+}
+

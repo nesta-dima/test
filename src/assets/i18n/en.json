@@ -94,6 +94,30 @@
         "title": "STRATEGY",
         "description": "Our primary objective is to ensure customer satisfaction, and we achieve this by creating effective strategies that set you apart from the competition. We take into account the requirements of your business and create a unique approach to your customers."
       }
+    },
+    "team": {
+      "cards": {
+        "interestTitle": "Interest",
+        "card1": {
+          "name": "maria",
+          "position": "Creative director",
+          "description": "10 years in the fashion industry, founded a clothing brand, created collections, opened a boutique and clothing production, 15 years in photography and art, published 6 books, one of them became a bestseller on Amazon. Many years of experience in the field of SMM, IT technologies, crypto.",
+          "interests": "Psychology, meditation, art, holistic medicine, nutrition.A deep study of a person at the level of the psyche, soul and body",
+          "quotes": {
+            "quote1": "Believe in love and that every person is a part of the whole. I believe that everyone can do what they love and be truly happy from it!",
+            "quote2": "I wanted to create a place where every person can realize their talent and bring value to customers, and their customers would get great pleasure from their products and services",
+            "quote3": "The agency started with this idea!This is more than a business of services - it is a powerful creative and intellectual community of people with a special worldview and consciousness"
+          }
+        },
+        "card2": {
+          "name": "anna",
+          "position": "COO",
+          "description": "Has made her way starting from a promoter to a leader in top companies in Belarus! She received a higher technical education as an engineer-economist.Increased company profits by 3  times. She was engaged in the formation and development of various areas in the advertising business, led sales departments with more then 15 people.",
+          "interests": " I consider optimism and sociability to be my best qualities! I like to negotiate and communicate with smart and interesting people! I love traveling, new countries and cities. When I travel, I am energized and inspired by new ideas!",
+          "quotes": {
+            "quote1": "The decision to start the business came at the moment of complete understanding of myself, my individuality, my beauty and confidence that want to do what I truly love"}
+        }
+      }
     }
   }
 }

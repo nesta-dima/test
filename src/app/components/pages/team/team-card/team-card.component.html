@@ -1,0 +1,24 @@
+<div class="user" *ngIf="isMobile; else desktop">
+  <div class="user__name" translate>{{user.name}}</div>
+  <p class="user__position" translate>{{user.position}}</p>
+  <img src="{{user.image}}" [alt]="user.name | translate" />
+  <p class="user__description" translate>{{user.description}}</p>
+  <p class="user__interest" translate><span>{{'page.team.cards.interestTitle'| translate}}: </span>{{user.interests}}</p>
+  <app-team-quote [quotes]="user.quotes" [name]="user.name"></app-team-quote>
+</div>
+<ng-template #desktop>
+  <div class="user user-desktop" [class.user-desktop-revert]="index % 2 !== 0">
+    <img src="{{user.image}}" [alt]="user.name | translate" />
+    <div class="user__author">
+      <div class="user__name" translate>{{user.name}}</div>
+      <div class="user__position" translate>{{user.position}}</div>
+    </div>
+    <div class="user-mobile__info">
+      <p class="user__description" translate>{{user.description}}</p>
+      <div class="user__interest" translate><span>{{'page.team.cards.interestTitle'| translate}}:</span>{{user.interests}}</div>
+
+      <app-team-quote [quotes]="user.quotes" [name]="user.name"></app-team-quote>
+    </div>
+
+  </div>
+</ng-template>

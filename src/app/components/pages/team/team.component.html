@@ -1,0 +1,14 @@
+<ng-container *ngIf="!isMenuOpen">
+
+  <div class="team">
+    <video autoplay muted loop id="myVideo">
+      <source src="assets/video/video.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div class="team__card">
+      <app-team-card *ngFor="let user of team;let i = index" [user]="user" [index]="i"></app-team-card>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</ng-container>

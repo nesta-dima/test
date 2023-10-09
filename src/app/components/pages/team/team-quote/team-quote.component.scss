@@ -1,0 +1,10 @@
+.quote{
+  font-style: italic;
+  font-size: 14px;
+  padding: 0 20px;
+
+  span{
+    font-family: CustomFontRegular, sans-serif;
+    text-transform: capitalize;
+  }
+}

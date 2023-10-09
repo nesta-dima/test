@@ -29,6 +29,9 @@ import { ServicesWorkComponent } from './components/shared/services-work/service
 import { StagesOfWorkComponent } from './components/pages/stages-of-work/stages-of-work.component';
 import { StagesCardComponent } from './components/pages/stages-of-work/stages-card/stages-card.component';
 import { WriteTextLetterDirective } from './directives/write-text-letter.directive';
+import { TeamComponent } from './components/pages/team/team.component';
+import { TeamCardComponent } from './components/pages/team/team-card/team-card.component';
+import { TeamQuoteComponent } from './components/pages/team/team-quote/team-quote.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -48,6 +51,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     StagesOfWorkComponent,
     StagesCardComponent,
     WriteTextLetterDirective,
+    TeamComponent,
+    TeamCardComponent,
+    TeamQuoteComponent,
   ],
   imports: [
     BrowserModule,
