@@ -6,6 +6,7 @@ import { ServicesComponent } from './components/pages/services/services.componen
 import { StagesOfWorkComponent } from './components/pages/stages-of-work/stages-of-work.component';
 import { TeamComponent } from './components/pages/team/team.component';
 import { ContactsComponent } from './components/pages/contacts/contacts.component';
+import { OrderComponent } from './components/pages/order/order.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'contacts',
     component: ContactsComponent,
+  },
+  {
+    path: 'order',
+    component: OrderComponent,
   },
   {
     path: '**',
