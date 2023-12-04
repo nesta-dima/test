@@ -44,7 +44,7 @@ const routes: Routes = [
     component: PortfolioComponent,
   },
   {
-    path: 'portfolio/:id',
+    path: 'portfolio/:url',
     component: PrimeBuildLabComponent,
   },
   {

@@ -20,7 +20,7 @@ export class PrimeBuildLabComponent {
 
   isMenuOpen = false;
 
-  id = '';
+  url = '';
   value: Item | null = null;
   constructor(private menuService: MenuService, private route: ActivatedRoute) {
     this.menuService.menuOpen$.subscribe((isOpen) => {
@@ -29,8 +29,8 @@ export class PrimeBuildLabComponent {
   }
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
-      this.id = params['id'];
-      const test = data.find((item) => item.url === this.id);
+      this.url = params['url'];
+      const test = data.find((item) => item.url === this.url);
       if (test) {
         this.value = test;
       }

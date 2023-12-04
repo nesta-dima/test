@@ -1,11 +1,17 @@
 <ng-container *ngIf="!isMenuOpen">
-  <p *ngFor="let title of value?.title">{{title}}</p>
-  <p>Service:</p>
-  <ul>
-    <li *ngFor="let item of value?.services">{{item}}</li>
-  </ul>
-  <p *ngFor="let image of value?.photos">
-    <img [src]="image">
-  </p>
+  <section>
+    <hr/>
+    <div><a [routerLink]="'/'">Home</a> / <a [routerLink]="'/portfolio'">portfolio</a> / <span>{{value?.name}}</span></div>
+    <hr/>
+    <p *ngFor="let title of value?.title">{{title}}</p>
+    <p>Service:</p>
+    <ul>
+      <li *ngFor="let item of value?.services">{{item}}</li>
+    </ul>
+    <p *ngFor="let image of value?.photos">
+      <img [src]="image">
+    </p>
+  </section>
+  <app-footer></app-footer>
 </ng-container>
 

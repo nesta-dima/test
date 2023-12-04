@@ -15,6 +15,8 @@ export interface ITeam {
 
 export interface Item {
   url: string;
+  name: string;
+  logo: string;
   title: string[];
   services: string[];
   photos: string[];

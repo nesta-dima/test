@@ -1,0 +1,17 @@
+
+section{
+  padding: 0 15px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+img{
+  transition: all .3s;
+  &:hover{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  }
+}

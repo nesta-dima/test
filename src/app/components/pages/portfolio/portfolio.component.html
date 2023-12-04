@@ -1,8 +1,11 @@
 <ng-container *ngIf="!isMenuOpen">
-  <ul>
-    <li>
-      <a [routerLink]="'./prime-build-lab'">prime-build-lab</a>
-      <a [routerLink]="'./prime-build-lab2'">prime-build-lab2</a>
-    </li>
-  </ul>
+  <section>
+    <div *ngFor="let item of data">
+      <a [routerLink]="item.url">
+        <img [src]="item.logo">
+        <p>{{item.name}}</p>
+      </a>
+    </div>
+  </section>
+  <app-footer></app-footer>
 </ng-container>
