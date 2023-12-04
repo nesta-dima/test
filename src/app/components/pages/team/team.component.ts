@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { MenuService } from '../../../services/menu.service';
 import { ITeam } from '../../../models/index.model';
 
@@ -7,7 +7,7 @@ import { ITeam } from '../../../models/index.model';
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.scss'],
 })
-export class TeamComponent {
+export class TeamComponent implements AfterViewInit {
   isMenuOpen = false;
   team: ITeam[] = [
     {
@@ -31,9 +31,19 @@ export class TeamComponent {
       quotes: ['page.team.cards.card2.quotes.quote1'],
     },
   ];
+
+  @ViewChild('videoElement') videoElement!: ElementRef;
+  private isPlaying = true;
+
   constructor(private menuService: MenuService) {
     this.menuService.menuOpen$.subscribe((isOpen) => {
       this.isMenuOpen = isOpen;
+    });
+  }
+  videoVolume = 0.01;
+  ngAfterViewInit() {
+    this.videoElement.nativeElement.addEventListener('loadedmetadata', () => {
+      this.videoElement.nativeElement.volume = this.videoVolume;
     });
   }
 }

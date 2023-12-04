@@ -12,3 +12,10 @@ export interface ITeam {
   interests: string;
   quotes: string[];
 }
+
+export interface Item {
+  url: string;
+  title: string[];
+  services: string[];
+  photos: string[];
+}

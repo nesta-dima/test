@@ -1,0 +1,11 @@
+<ng-container *ngIf="!isMenuOpen">
+  <p *ngFor="let title of value?.title">{{title}}</p>
+  <p>Service:</p>
+  <ul>
+    <li *ngFor="let item of value?.services">{{item}}</li>
+  </ul>
+  <p *ngFor="let image of value?.photos">
+    <img [src]="image">
+  </p>
+</ng-container>
+

@@ -16,17 +16,16 @@
     "services": {
       "title": "services",
       "types": {
+        "brandingLogoDesign": "Branding & logo design",
+        "socialMediaManagement": "Social media management & target ads",
+        "photoVideoProduction": "Photo & video production",
         "webDesign&Development": "Web Design & Development",
-        "printCollAterals": "Print Coll Aterals",
-        "packagingDesign": "Packaging Design",
-        "socialMediaStrategyAndManagement": "Social media strategy and management",
-        "brandConsulting": "Brand consulting",
-        "branding(logo&brandId)": "Branding (Logo & Brand Id)"
+        "seoOptimization": "Seo optimization"
       },
       "cards": {
         "capabilitiesTitle": "capabilities",
         "card1": {
-          "title": "BRAND, LOGO AND IDENTITY",
+          "title": "BRAND IDENTITY",
           "description": {
             "p1": "We’ll help you identify how to best showcase your business and appeal to your audience through your name, story, logo, identity materials, and brand guidelines",
             "p2": "Creating a brand is more than just designing the right logo—it’s a comprehensive system that encompasses t   he whole identity of a company, who they serve, and what they offer.",
@@ -71,6 +70,24 @@
             "p1": "THE SOURCE La digital boutique specializes in website design and development services. Our web experiences are high-performing, feature-packed and digitally transformative, designed to be user-friendly, fully functional, very secure and able to scale as your enterprise grows.",
             "p2": "Our website developers provide expert web application development and web design services to our clients."
           }
+        },
+        "card4": {
+          "title": "Seo optimization",
+          "description": {
+            "p1": "Search Engine Optimization (SEO):",
+            "p2": "- Unleash the power of organic growth: We'll optimize your website to rank higher on search engines like Google, Yahoo, and Bing, driving an influx of relevant, high-quality traffic",
+            "p3": "- Tailored strategies: Our SEO specialists will craft a custom plan to match your unique goals and target audience, ensuring you climb the search engine ranks effectively.",
+            "p4": "- On-page and off-page optimization: From keyword research and content optimization to backlink building, we've got all the SEO bases covered"
+          }
+        },
+        "card5": {
+          "title": "Photo & video production",
+          "description": {
+            "p1": "Introducing our shooting services for businesses, brands, and experts in need of top-tier photo and video production. In today's digital landscape, captivating visuals are the heart of successful marketing and social media strategies",
+            "p2": "Whether you're looking to create eye-catching Instagram reels, engaging posts, or professional content to elevate your brand, we've got you covered.",
+            "p3": "Our team of skilled photographers and videographers are dedicated to bringing your vision to life. We understand the power of compelling imagery and storytelling, and we're here to help you stand out in a crowded digital space. We're not just creators; we're storytellers, crafting narratives that resonate with your audience.",
+            "p4": "What sets us apart is our commitment to understanding your unique needs. We work closely with you to grasp your brand's essence, values, and objectives. This personalized approach allows us to tailor our services to your specific requirements, resulting in content that authentically represents your brand and captivates your audience."
+          }
         }
       },
       "works": {
@@ -101,7 +118,7 @@
         "card1": {
           "name": "maria",
           "position": "Creative director",
-          "description": "10 years in the fashion industry, founded a clothing brand, created collections, opened a boutique and clothing production, 15 years in photography and art, published 6 books, one of them became a bestseller on Amazon. Many years of experience in the field of SMM, IT technologies, crypto.",
+          "description": "Hello, I’m a co-founder and creative director of THE SOURCE La Digital Boutique. I have an experience over ten years in the fashion industry, having founded several clothing brands and opened a boutique, made to measure atelier and clothing production. I have been shooting for more than 15 years, and lately, I developed my videography and editing skills. I published six books, one of them became a bestseller on Amazon. I have years of experience in SMM, marketing, design, and IT technologies.",
           "interests": "Psychology, meditation, art, holistic medicine, nutrition.A deep study of a person at the level of the psyche, soul and body",
           "quotes": {
             "quote1": "Believe in love and that every person is a part of the whole. I believe that everyone can do what they love and be truly happy from it!",
@@ -112,7 +129,7 @@
         "card2": {
           "name": "anna",
           "position": "COO",
-          "description": "Has made her way starting from a promoter to a leader in top companies in Belarus! She received a higher technical education as an engineer-economist.Increased company profits by 3  times. She was engaged in the formation and development of various areas in the advertising business, led sales departments with more then 15 people.",
+          "description": "Hello, I am Anna, a co-founder and COO. I’ve made my way, starting from a promoter to a leader in top companies in Belarus! I received a higher technical education as an engineer-economist.\nIncreased company’s profits by three times. I was engaged in forming and developing various areas in the advertising business and led sales departments with more than 15 people.",
           "interests": " I consider optimism and sociability to be my best qualities! I like to negotiate and communicate with smart and interesting people! I love traveling, new countries and cities. When I travel, I am energized and inspired by new ideas!",
           "quotes": {
             "quote1": "The decision to start the business came at the moment of complete understanding of myself, my individuality, my beauty and confidence that want to do what I truly love"}

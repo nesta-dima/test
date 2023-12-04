@@ -34,6 +34,8 @@ import { TeamCardComponent } from './components/pages/team/team-card/team-card.c
 import { TeamQuoteComponent } from './components/pages/team/team-quote/team-quote.component';
 import { ContactsComponent } from './components/pages/contacts/contacts.component';
 import { OrderComponent } from './components/pages/order/order.component';
+import { PortfolioComponent } from './components/pages/portfolio/portfolio.component';
+import { PrimeBuildLabComponent } from './components/pages/portfolio/pages/prime-build-lab/prime-build-lab.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -58,6 +60,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     TeamQuoteComponent,
     ContactsComponent,
     OrderComponent,
+    PortfolioComponent,
+    PrimeBuildLabComponent,
   ],
   imports: [
     BrowserModule,

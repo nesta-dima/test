@@ -8,12 +8,11 @@ import { MenuService } from '../../../services/menu.service';
 })
 export class ServicesComponent {
   types = [
+    'page.services.types.brandingLogoDesign',
+    'page.services.types.socialMediaManagement',
+    'page.services.types.photoVideoProduction',
     'page.services.types.webDesign&Development',
-    'page.services.types.printCollAterals',
-    'page.services.types.packagingDesign',
-    'page.services.types.socialMediaStrategyAndManagement',
-    'page.services.types.brandConsulting',
-    'page.services.types.branding(logo&brandId)',
+    'page.services.types.seoOptimization',
   ];
 
   items = [
@@ -63,6 +62,28 @@ export class ServicesComponent {
       description: [
         'page.services.cards.card3.description.p1',
         'page.services.cards.card3.description.p2',
+      ],
+      capabilities: [],
+    },
+    {
+      title: 'page.services.cards.card4.title',
+      image: 'assets/images/service.card4.png',
+      description: [
+        'page.services.cards.card4.description.p1',
+        'page.services.cards.card4.description.p2',
+        'page.services.cards.card4.description.p3',
+        'page.services.cards.card4.description.p4',
+      ],
+      capabilities: [],
+    },
+    {
+      title: 'page.services.cards.card5.title',
+      image: 'assets/images/service.card5.png',
+      description: [
+        'page.services.cards.card5.description.p1',
+        'page.services.cards.card5.description.p2',
+        'page.services.cards.card5.description.p3',
+        'page.services.cards.card5.description.p4',
       ],
       capabilities: [],
     },

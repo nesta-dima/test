@@ -7,36 +7,46 @@ import { StagesOfWorkComponent } from './components/pages/stages-of-work/stages-
 import { TeamComponent } from './components/pages/team/team.component';
 import { ContactsComponent } from './components/pages/contacts/contacts.component';
 import { OrderComponent } from './components/pages/order/order.component';
+import { PortfolioComponent } from './components/pages/portfolio/portfolio.component';
+import { PrimeBuildLabComponent } from './components/pages/portfolio/pages/prime-build-lab/prime-build-lab.component';
 
 const routes: Routes = [
   {
     path: '',
     component: RootComponent,
   },
-  // {
-  //   path: 'about-us',
-  //   component: AboutUsComponent,
-  // },
-  // {
-  //   path: 'services',
-  //   component: ServicesComponent,
-  // },
-  // {
-  //   path: 'stages-of-work',
-  //   component: StagesOfWorkComponent,
-  // },
-  // {
-  //   path: 'team',
-  //   component: TeamComponent,
-  // },
-  // {
-  //   path: 'contacts',
-  //   component: ContactsComponent,
-  // },
-  // {
-  //   path: 'order',
-  //   component: OrderComponent,
-  // },
+  {
+    path: 'about-us',
+    component: AboutUsComponent,
+  },
+  {
+    path: 'services',
+    component: ServicesComponent,
+  },
+  {
+    path: 'stages-of-work',
+    component: StagesOfWorkComponent,
+  },
+  {
+    path: 'team',
+    component: TeamComponent,
+  },
+  {
+    path: 'contacts',
+    component: ContactsComponent,
+  },
+  {
+    path: 'order',
+    component: OrderComponent,
+  },
+  {
+    path: 'portfolio',
+    component: PortfolioComponent,
+  },
+  {
+    path: 'portfolio/:id',
+    component: PrimeBuildLabComponent,
+  },
   {
     path: '**',
     redirectTo: '',
