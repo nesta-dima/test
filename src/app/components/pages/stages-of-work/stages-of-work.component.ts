@@ -18,17 +18,17 @@ export class StagesOfWorkComponent {
   stages: IStages[] = [
     {
       title: 'page.stages.card1.title',
-      image: 'assets/images/stages.card1.png',
+      image: 'assets/images/stages/research.png',
       description: 'page.stages.card1.description',
     },
     {
       title: 'page.stages.card2.title',
-      image: 'assets/images/stages.card2.png',
+      image: 'assets/images/stages/design.png',
       description: 'page.stages.card2.description',
     },
     {
       title: 'page.stages.card3.title',
-      image: 'assets/images/stages.card3.png',
+      image: 'assets/images/stages/strategy.png',
       description: 'page.stages.card3.description',
     },
   ];

@@ -1,6 +1,9 @@
 <ng-container *ngIf="!isMenuOpen">
   <h1 appWriteTextLetter [appGetValue]="'THE SOURCE'">&nbsp;</h1>
-  <img [src]='getUrl' alt="the source" />
+  <div class="image">
+    <img [src]='getUrl' alt="the source" />
+  </div>
+
 </ng-container>
 <ng-container *ngIf="!isMenuOpen"><app-footer></app-footer></ng-container>
 

@@ -15,38 +15,38 @@ const routes: Routes = [
     path: '',
     component: RootComponent,
   },
-  // {
-  //   path: 'about-us',
-  //   component: AboutUsComponent,
-  // },
-  // {
-  //   path: 'services',
-  //   component: ServicesComponent,
-  // },
-  // {
-  //   path: 'stages-of-work',
-  //   component: StagesOfWorkComponent,
-  // },
-  // {
-  //   path: 'team',
-  //   component: TeamComponent,
-  // },
-  // {
-  //   path: 'contacts',
-  //   component: ContactsComponent,
-  // },
-  // {
-  //   path: 'order',
-  //   component: OrderComponent,
-  // },
-  // {
-  //   path: 'portfolio',
-  //   component: PortfolioComponent,
-  // },
-  // {
-  //   path: 'portfolio/:url',
-  //   component: PrimeBuildLabComponent,
-  // },
+  {
+    path: 'about-us',
+    component: AboutUsComponent,
+  },
+  {
+    path: 'services',
+    component: ServicesComponent,
+  },
+  {
+    path: 'stages-of-work',
+    component: StagesOfWorkComponent,
+  },
+  {
+    path: 'team',
+    component: TeamComponent,
+  },
+  {
+    path: 'contacts',
+    component: ContactsComponent,
+  },
+  {
+    path: 'order',
+    component: OrderComponent,
+  },
+  {
+    path: 'portfolio',
+    component: PortfolioComponent,
+  },
+  {
+    path: 'portfolio/:url',
+    component: PrimeBuildLabComponent,
+  },
   {
     path: '**',
     redirectTo: '',

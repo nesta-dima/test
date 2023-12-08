@@ -16,9 +16,9 @@
     "services": {
       "title": "services",
       "types": {
-        "brandingLogoDesign": "Branding & logo design",
-        "socialMediaManagement": "Social media management & target ads",
-        "photoVideoProduction": "Photo & video production",
+        "brandingLogoDesign": "Branding & Logo design",
+        "socialMediaManagement": "Social media management & Target ads",
+        "photoVideoProduction": "Photo & Video production",
         "webDesign&Development": "Web Design & Development",
         "seoOptimization": "Seo optimization"
       },
@@ -138,7 +138,156 @@
     },
     "contacts": {
       "discussTheProject": "discuss the project"
+    },
+    "portfolio": {
+      "prime": {
+        "title": {
+          "t1": "Prime build Lab, a residential developing company, located in Miami, FL"
+        },
+        "services": {
+          "s1": "brand book and corporate identity development",
+          "s2": "printed materials: business cards, folders, packaging, presentations",
+          "s3": "website development",
+          "s4": "visuals for social media"
+        }
+      },
+      "clean": {
+        "title": {
+          "t1": "La Clean is a cleaning company in Warsaw."
+        },
+        "services": {
+          "s1": "brand book and corporate identity development",
+          "s2": "printed materials: business cards, stickers, t-shirts, brochures",
+          "s3": "website development",
+          "s4": "visuals for social media"
+        }
+      },
+      "wine": {
+        "title": {
+          "t1": "WinehundredMiles | Wine - Gastronomic Tours To Spain. The organizers gather like-minded companies to see new and share knowledge about wine: visiting wineries and wine fields, restaurants, yoga classes, local attractions, culinary workshops, as well as the study of wine vocabulary in Spanish."
+        },
+        "services": {
+          "s1": "brand book and corporate identity",
+          "s2": "printed products: business cards, booklets."
+        }
+      },
+      "case": {
+        "title": {
+          "t1": "Caselab | Legal Firm",
+          "t2": "A law firm helps to resolve family and inheritance disputes, challenges real estate transactions."
+        },
+        "services": {
+          "s1": "creating a corporate identity: logo, selection of corporate colors, pairs of branded fonts, business cards and flyers"
+        }
+      },
+      "construct": {
+        "title": {
+          "t1": "Construction company."
+         },
+        "services": {
+          "s1": "branding & logo design"
+        }
+      },
+      "hair": {
+        "title": {
+          "t1": "Hair extension studio."
+        },
+        "services": {
+          "s1": "photo and video shooting",
+          "s2": "visual instagram"
+        }
+      },
+      "instagram": {
+        "title": {
+          "t1": "Instagram pages for post bars, brow and lashes, detailing studio."
+        },
+        "services": {
+          "s1": "photo and video shooting",
+          "s2": "visual instagram"
+        }
+      },
+      "web": {
+        "title": {
+          "t1": "Web design work. Visual design of websites, landing pages, web applications."
+        },
+        "services": {
+          "s1": "web design & development",
+          "s2": "app design"
+        }
+      },
+      "poldok": {
+        "title": {
+          "t1": "Pol.dok is a company that deals with legalization in Poland (car registration, residence permit, legal services)."
+        },
+        "services": {
+          "s1": "photo and video shooting",
+          "s2": "choice of location",
+          "s3": "selection of clothing style",
+          "s4": "development strategy",
+          "s5": "visual instagram",
+          "s6": "smm"
+        }
+      },
+      "polza": {
+        "title": {
+          "t1": "The company provides services: translations, notary, lawyer, apostille."
+        },
+        "services": {
+          "s1": "rebranding",
+          "s2": "visual instagram",
+          "s3": "smm"
+        }
+      },
+      "expert": {
+        "title": {
+          "t1": "Expert photo."
+        },
+        "services": {
+          "s1": "clothing style selection",
+          "s2": "photo and video shooting for social media and presentations",
+          "s3": "location selection",
+          "s4": "editing and post production",
+          "s5": "instagram feed creation"
+        }
+      },
+      "creative": {
+        "title": {
+          "t1": "A creative photo shoot in the studio or other interesting locations."
+        },
+        "services": {
+          "s1": "photo and video shooting",
+          "s2": "selection of clothing style"
+        }
+      },
+      "thema": {
+        "title": {
+          "t1": "Thematic photo shoot with image creation, selection of costumes and accessories."
+        },
+        "services": {
+          "s1": "photo and video shooting",
+          "s2": "selection of clothing style"
+        }
+      },
+      "homewear": {
+        "title": {
+          "t1": "Home wear for women who prefer to be a queen not just outside her house but for her own self on a first place."
+        },
+        "services": {
+          "s1": "shooting a clothing catalog",
+          "s2": "women's clothing advertising campaign"
+        }
+      }
     }
+  },
+  "order": {
+    "title": "for our customers",
+    "p1": "Please complete the contact form below to enable us to reach out and address any inquiries you may have.",
+    "p2": "If you prefer, feel free to contact us through email at",
+    "p3": "or reach out via instant messengers and social networks.",
+    "question": "What services are you interested in?",
+    "thanks1": "Thanks a lot !",
+    "thanks2": "We have received your request",
+    "thanks3": "we will contact you shortly to discuss all the to discuss all the details"
   }
 }
 

@@ -1,6 +1,9 @@
 <div class="card" #card (mouseenter)="onMouseEnter()"
      (mouseleave)="onMouseLeave()">
   <div class="card-title" translate>{{data.title}}</div>
-  <img src="{{data.image}}" [alt]="data.title" />
+  <div class="image">
+    <img src="{{data.image}}" [alt]="data.title" />
+  </div>
+
   <div class="card-description" translate>{{data.description}}</div>
 </div>

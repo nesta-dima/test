@@ -36,6 +36,7 @@ import { ContactsComponent } from './components/pages/contacts/contacts.componen
 import { OrderComponent } from './components/pages/order/order.component';
 import { PortfolioComponent } from './components/pages/portfolio/portfolio.component';
 import { PrimeBuildLabComponent } from './components/pages/portfolio/pages/prime-build-lab/prime-build-lab.component';
+import {MatInputModule} from "@angular/material/input";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -63,33 +64,34 @@ export function HttpLoaderFactory(http: HttpClient) {
     PortfolioComponent,
     PrimeBuildLabComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatMenuModule,
-    HttpClientModule,
-    MatButtonToggleModule,
-    MatTooltipModule,
-    MatCheckboxModule,
-    FormsModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    ReactiveFormsModule,
-    NgOptimizedImage,
-    TranslateModule.forRoot({
-      defaultLanguage: 'en',
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient],
-      },
-    }),
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        MatIconModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatMenuModule,
+        HttpClientModule,
+        MatButtonToggleModule,
+        MatTooltipModule,
+        MatCheckboxModule,
+        FormsModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        ReactiveFormsModule,
+        NgOptimizedImage,
+        TranslateModule.forRoot({
+            defaultLanguage: 'en',
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient],
+            },
+        }),
+        MatInputModule,
+    ],
   providers: [],
   bootstrap: [AppComponent],
 })

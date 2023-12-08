@@ -1,13 +1,79 @@
 <ng-container *ngIf="!isMenuOpen">
-  <div class="order">
+  <div class="order" *ngIf="!isSend; else done">
     <div class="wrapper">
-      <h1 translate>for our customers</h1>
-      <p></p>
+      <h1 translate>order.title</h1>
     </div>
-    <p>Please complete the contact form below to enable us to reach out and address any inquiries you may have.</p>
-    <p>If you prefer, feel free to contact us through email at <a href="mailto:thesource.ladigital@gmail.com" target="_blank">thesource.ladigital@gmail.com</a> or reach out via instant messengers and social networks.</p>
-    <img src="/assets/images/order.image.png" />
+
+    <div class="block">
+      <div>
+        <p translate>order.p1</p>
+        <p><span translate>order.p2 </span>
+          <a href="mailto:thesource.ladigital@gmail.com" target="_blank">thesource.ladigital@gmail.com</a>
+        <span translate> order.p3</span>
+        </p>
+        <img src="/assets/images/order/order.png"/>
+      </div>
+
+
+      <form [formGroup]='orderForm' (ngSubmit)='submit()'>
+        <mat-form-field>
+          <mat-label>Name</mat-label>
+          <input matInput formControlName='name'>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Email address</mat-label>
+          <input matInput formControlName='email'>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Telephone</mat-label>
+          <input matInput placeholder='phone' formControlName='phone'>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Instagram</mat-label>
+          <input matInput formControlName='instagram'>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Web site</mat-label>
+          <input matInput formControlName='site'>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Additional Information</mat-label>
+          <input matInput formControlName='info'>
+        </mat-form-field>
+
+        <h3 translate>order.question</h3>
+        <section *ngFor="let ing of works; let i = index">
+
+          <mat-checkbox
+            [color]="'primary'"
+            [checked]="ing.checked"
+            (change)="checkChange(ing.value)"
+          >
+            {{ing.name}}
+          </mat-checkbox>
+        </section>
+        <button type='submit'>
+          SEND
+        </button>
+      </form>
+    </div>
+
   </div>
+  <ng-template #done>
+    <div class="response">
+      <h1 translate>order.thanks1</h1>
+      <p translate>order.thanks2 </p>
+      <img src="./assets/images/order/done.png" />
+      <p translate>order.thanks3</p>
+    </div>
+
+  </ng-template>
+
   <app-footer></app-footer>
 </ng-container>
 

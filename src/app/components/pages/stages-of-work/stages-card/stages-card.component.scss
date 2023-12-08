@@ -5,7 +5,7 @@
     position: absolute;
     text-align: center;
     color: white;
-    font-size: 48px;
+    font-size: 40px;
     text-transform: uppercase;
     width: 100%;
     padding-top: 25px;
@@ -37,24 +37,31 @@
       padding: 0;
     }
   }
+
+  .image{
+    text-align: center;
+  }
+
   img {
-    min-height: 520px;
-    width: 100%;
+    //min-height: 520px;
+    //width: 100%;
+    width: 345px;
+    height: 410px;
 
     @media (max-width: 1280px) {
-      min-height: auto;
+      //min-height: auto;
       margin-bottom: 20px;
     }
   }
 }
 
 .card.active{
-
+  transition: all 0.3s;
     &:before {
       content: '';
       background-color: rgba(black, .5);
       display: block;
-      height: 100%;
+      height: 99%;
       width: 100%;
       position: absolute;
     }

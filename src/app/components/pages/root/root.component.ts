@@ -8,9 +8,9 @@ import { MenuService } from '../../../services/menu.service';
 })
 export class RootComponent {
   index = 1;
-  photos = ['1.png', '2.png', '3.png'];
+  photos = ['1.png', '2.png', '3.png','4.png', '5.png', '6.png'];
   get getUrl() {
-    return `./assets/images/${this.photos[this.index - 1]}`;
+    return `./assets/images/screen/${this.photos[this.index - 1]}`;
   }
 
   isMenuOpen = false;

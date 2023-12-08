@@ -9,16 +9,16 @@ import { MenuService } from '../../../services/menu.service';
 export class ServicesComponent {
   types = [
     'page.services.types.brandingLogoDesign',
-    'page.services.types.socialMediaManagement',
     'page.services.types.photoVideoProduction',
     'page.services.types.webDesign&Development',
     'page.services.types.seoOptimization',
+    'page.services.types.socialMediaManagement',
   ];
 
   items = [
     {
       title: 'page.services.cards.card1.title',
-      image: 'assets/images/service.card1.png',
+      image: 'assets/images/services/1.png',
       description: [
         'page.services.cards.card1.description.p1',
         'page.services.cards.card1.description.p2',
@@ -41,7 +41,7 @@ export class ServicesComponent {
     },
     {
       title: 'page.services.cards.card2.title',
-      image: 'assets/images/service.card2.png',
+      image: 'assets/images/services/2.png',
       description: ['page.services.cards.card2.description.p1'],
       capabilities: [
         'page.services.cards.card2.capabilities.p1',
@@ -58,7 +58,7 @@ export class ServicesComponent {
     },
     {
       title: 'page.services.cards.card3.title',
-      image: 'assets/images/service.card3.png',
+      image: 'assets/images/services/3.png',
       description: [
         'page.services.cards.card3.description.p1',
         'page.services.cards.card3.description.p2',
@@ -67,7 +67,7 @@ export class ServicesComponent {
     },
     {
       title: 'page.services.cards.card4.title',
-      image: 'assets/images/service.card4.png',
+      image: 'assets/images/services/4.png',
       description: [
         'page.services.cards.card4.description.p1',
         'page.services.cards.card4.description.p2',
@@ -78,7 +78,7 @@ export class ServicesComponent {
     },
     {
       title: 'page.services.cards.card5.title',
-      image: 'assets/images/service.card5.png',
+      image: 'assets/images/services/5.png',
       description: [
         'page.services.cards.card5.description.p1',
         'page.services.cards.card5.description.p2',

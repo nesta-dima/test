@@ -25,15 +25,17 @@
     }
   }
   &-image {
-    min-height: 780px;
     padding-top: 200px;
+    text-align: center;
 
     @media (max-width: 1280px) {
       padding-top: 20px;
       min-height: 100px;
     }
     img {
-      width: 100%;
+      //width: 100%;
+      width: 345px;
+      height: 370px;
       opacity: 0;
       transform: translateX(-100%);
       transition: all 0.3s;
