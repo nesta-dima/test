@@ -57,13 +57,13 @@ export class OrderComponent {
 
 
   works=[
-    {name : "Web design & development", value: '1', checked : false},
-    {name : "Social media strategy and management",value: '2', checked : false},
-    {name : "Print collateral", value: '3',checked : false},
-    {name : "Brand consulting", value: '4',checked : false},
-    {name : "Packaging design", value: '5',checked : false},
-    {name : "Branding (logo & brand id)", value: '6', checked : false},
-    {name : "haven't decided yet, need to discuss",value: '7', checked : false}
+    {name : "Web design & development", title : "order.form.services.s1", value: '1', checked : false},
+    {name : "Social media strategy and management", title : "order.form.services.s2",value: '2', checked : false},
+    {name : "Print collateral", value: '3', title : "order.form.services.s3",checked : false},
+    {name : "Brand consulting", value: '4', title : "order.form.services.s4",checked : false},
+    {name : "Packaging design", value: '5', title : "order.form.services.s5",checked : false},
+    {name : "Branding (logo & brand id)", title : "order.form.services.s6", value: '6', checked : false},
+    {name : "haven't decided yet, need to discuss", title : "order.form.services.s7",value: '7', checked : false}
   ];
 
   checkChange(i: string) {

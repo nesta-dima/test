@@ -15,6 +15,7 @@
     },
     "services": {
       "title": "services",
+      "btn": "order service",
       "types": {
         "brandingLogoDesign": "Branding & Logo design",
         "socialMediaManagement": "Social media management & Target ads",
@@ -228,7 +229,7 @@
           "s6": "smm"
         }
       },
-      "polza": {
+      "polsza": {
         "title": {
           "t1": "The company provides services: translations, notary, lawyer, apostille."
         },
@@ -287,7 +288,25 @@
     "question": "What services are you interested in?",
     "thanks1": "Thanks a lot !",
     "thanks2": "We have received your request",
-    "thanks3": "we will contact you shortly to discuss all the to discuss all the details"
+    "thanks3": "we will contact you shortly to discuss all the to discuss all the details",
+    "form": {
+      "name": "Name",
+      "phone": "Telephone",
+      "email": "Email address",
+      "instagram": "instagram",
+      "web": "website",
+      "add": "additional information",
+      "services": {
+        "s1": "Web design & development",
+        "s2": "Social media strategy and management",
+        "s3": "Print collateral",
+        "s4": "Brand consulting",
+        "s5": "Packaging design",
+        "s6": "Branding (logo & brand id)",
+        "s7": "haven't decided yet, need to discuss"
+      },
+      "send": "Send"
+    }
   }
 }
 

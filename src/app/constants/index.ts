@@ -174,7 +174,6 @@ export const data: Item[] = [
       '/assets/images/portfolio/pol/3.png',
       '/assets/images/portfolio/pol/4.png',
       '/assets/images/portfolio/pol/5.png',
-      '/assets/images/portfolio/pol/6.jpg',
       '/assets/images/portfolio/pol/7.jpg',
     ],
   },
