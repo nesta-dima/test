@@ -33,7 +33,6 @@ export class TeamComponent implements AfterViewInit {
   ];
 
   @ViewChild('videoElement') videoElement!: ElementRef;
-  private isPlaying = true;
 
   constructor(private menuService: MenuService) {
     this.menuService.menuOpen$.subscribe((isOpen) => {

@@ -1,3 +1,5 @@
+@import '../../../../styles/variables.scss';
+
 :host{
   display: grid;
   grid-template-rows: auto 1fr;
@@ -5,10 +7,8 @@
   align-items: end;
 }
 
-
 .stages{
-
-  @media (max-width: 1280px) {
+  @media (max-width: $desktop) {
     padding: 0 15px;
     margin-bottom: 50px;
   }
@@ -21,7 +21,7 @@
     margin-bottom: 55px;
     text-transform: uppercase;
 
-    @media (max-width: 1280px) {
+    @media (max-width: $desktop) {
       font-size: 20px;
       text-decoration-line: none;
       padding-top: 20px;
@@ -33,7 +33,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 35px;
 
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: $desktop) {
       grid-template-columns: 1fr;
     }
   }

@@ -1,3 +1,5 @@
+@import '../../../../../styles/variables.scss';
+
 .card {
   position: relative;
 
@@ -11,7 +13,7 @@
     padding-top: 25px;
     font-family: CustomFontRegular, sans-serif;
 
-    @media (max-width: 1280px) {
+    @media (max-width: $desktop) {
       position: static;
       color: black;
       text-align: left;
@@ -30,7 +32,7 @@
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 
-    @media (max-width: 1280px) {
+    @media (max-width: $desktop) {
       position: static;
       opacity: 1;
       color: black;
@@ -43,13 +45,10 @@
   }
 
   img {
-    //min-height: 520px;
-    //width: 100%;
     width: 345px;
     height: 410px;
 
-    @media (max-width: 1280px) {
-      //min-height: auto;
+    @media (max-width: $desktop) {
       margin-bottom: 20px;
     }
   }

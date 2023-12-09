@@ -25,7 +25,6 @@ import { ServicesComponent } from './components/pages/services/services.componen
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { ServicesCardComponent } from './components/shared/services-card/services-card.component';
-import { ServicesWorkComponent } from './components/shared/services-work/services-work.component';
 import { StagesOfWorkComponent } from './components/pages/stages-of-work/stages-of-work.component';
 import { StagesCardComponent } from './components/pages/stages-of-work/stages-card/stages-card.component';
 import { WriteTextLetterDirective } from './directives/write-text-letter.directive';
@@ -52,7 +51,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     AboutUsComponent,
     ServicesComponent,
     ServicesCardComponent,
-    ServicesWorkComponent,
     StagesOfWorkComponent,
     StagesCardComponent,
     WriteTextLetterDirective,

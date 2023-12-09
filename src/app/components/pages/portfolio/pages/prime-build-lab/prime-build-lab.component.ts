@@ -4,12 +4,6 @@ import {data} from "../../../../../constants";
 import {Item} from "../../../../../models/index.model";
 import {MenuService} from "../../../../../services/menu.service";
 
-interface IPortfolioItem {
-  id: string;
-  title: string[];
-  services: string[];
-  photos: string[];
-}
 
 @Component({
   selector: 'app-prime-build-lab',

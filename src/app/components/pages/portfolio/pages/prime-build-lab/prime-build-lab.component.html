@@ -1,7 +1,7 @@
 <ng-container *ngIf="!isMenuOpen">
   <section>
     <hr/>
-    <div><a [routerLink]="'/'">Home</a> / <a [routerLink]="'/portfolio'">Portfolio</a> / <span>{{value?.name}}</span></div>
+    <div class="links"><a [routerLink]="'/'">Home</a> / <a [routerLink]="'/portfolio'">Portfolio</a> / <span>{{value?.name}}</span></div>
     <hr/>
     <p *ngFor="let title of value?.title" translate>{{title}}</p>
     <p>{{'menu.services' | translate}} :</p>

@@ -277,6 +277,14 @@
           "s1": "shooting a clothing catalog",
           "s2": "women's clothing advertising campaign"
         }
+      },
+      "sky": {
+        "title": {
+          "t1": "SKYBIZ Services"
+        },
+        "services": {
+          "s1": "visual instagram"
+        }
       }
     }
   },

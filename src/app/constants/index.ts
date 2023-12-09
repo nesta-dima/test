@@ -171,7 +171,6 @@ export const data: Item[] = [
     photos: [
       '/assets/images/portfolio/pol/1.png',
       '/assets/images/portfolio/pol/2.png',
-      '/assets/images/portfolio/pol/3.png',
       '/assets/images/portfolio/pol/4.png',
       '/assets/images/portfolio/pol/5.png',
       '/assets/images/portfolio/pol/7.jpg',
@@ -189,12 +188,9 @@ export const data: Item[] = [
       'page.portfolio.polsza.services.s2',
       'page.portfolio.polsza.services.s3',],
     photos: [
-      '/assets/images/portfolio/polsza/1.jpg',
+      '/assets/images/portfolio/polsza/1.png',
       '/assets/images/portfolio/polsza/2.png',
       '/assets/images/portfolio/polsza/3.png',
-      '/assets/images/portfolio/polsza/4.jpg',
-      '/assets/images/portfolio/polsza/5.jpg',
-      '/assets/images/portfolio/polsza/6.JPG',
     ],
   },
   {
@@ -219,7 +215,7 @@ export const data: Item[] = [
   },
   {
     url: 'creative',
-    name: 'A creative photo ',
+    name: 'Creative photo ',
     logo: '/assets/images/portfolio/creative/logo.png',
     title: [
       'page.portfolio.creative.title.t1'
@@ -266,6 +262,29 @@ export const data: Item[] = [
       '/assets/images/portfolio/homewear/1.png',
       '/assets/images/portfolio/homewear/2.png',
       '/assets/images/portfolio/homewear/3.png',
+    ],
+  },
+  {
+    url: 'sky',
+    name: 'SKYBIZ Services',
+    logo: '/assets/images/portfolio/sky/logo.png',
+    title: [
+      'page.portfolio.sky.title.t1'
+    ],
+    services: [
+      'page.portfolio.sky.services.s1',
+    ],
+    photos: [
+      '/assets/images/portfolio/sky/1.png',
+      '/assets/images/portfolio/sky/2.png',
+      '/assets/images/portfolio/sky/3.png',
+      '/assets/images/portfolio/sky/4.png',
+      '/assets/images/portfolio/sky/5.png',
+      '/assets/images/portfolio/sky/6.png',
+      '/assets/images/portfolio/sky/7.png',
+      '/assets/images/portfolio/sky/8.png',
+      '/assets/images/portfolio/sky/9.png',
+      '/assets/images/portfolio/sky/10.png',
     ],
   },
 ];

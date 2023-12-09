@@ -5,15 +5,14 @@
   display:  flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
-  @media (min-width: 1280px) {
-    //gap: 15px;
+  @media (min-width: $desktop) {
     align-items: self-end;
   }
 
 
   &-description{
     padding: 0 15px;
-    @media (min-width: 1280px) {
+    @media (min-width: $desktop) {
       order: 3;
       flex: 1;
       padding: 0;
@@ -37,11 +36,8 @@
 
 
   img {
-    //width: 100%;
-    //max-height: 500px;
-    @media (min-width: 1280px) {
+    @media (min-width: $desktop) {
       order: 2;
-      //width: 50%;
     }
   }
 
@@ -64,7 +60,6 @@
     color: rgba($black,.5);
     width: 100%;
   }
-
 }
 
 
