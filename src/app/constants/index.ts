@@ -89,6 +89,8 @@ export const data: Item[] = [
       '/assets/images/portfolio/construction/1.png',
       '/assets/images/portfolio/construction/2.png',
       '/assets/images/portfolio/construction/3.png',
+      '/assets/images/portfolio/construction/4.png',
+      '/assets/images/portfolio/construction/5.png',
     ],
   },
   {
