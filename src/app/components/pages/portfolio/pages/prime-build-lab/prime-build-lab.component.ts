@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {data} from "../../../../../constants";
-import {Item} from "../../../../../models/index.model";
-import {MenuService} from "../../../../../services/menu.service";
-
+import { data } from '../../../../../constants';
+import { Item } from '../../../../../models/index.model';
+import { MenuService } from '../../../../../services/menu.service';
+import { BeforeSlideDetail } from 'lightgallery/lg-events';
+import lgZoom from 'lightgallery/plugins/zoom';
 
 @Component({
   selector: 'app-prime-build-lab',
@@ -11,12 +12,14 @@ import {MenuService} from "../../../../../services/menu.service";
   styleUrls: ['./prime-build-lab.component.scss'],
 })
 export class PrimeBuildLabComponent {
-
   isMenuOpen = false;
 
   url = '';
   value: Item | null = null;
-  constructor(private menuService: MenuService, private route: ActivatedRoute) {
+  constructor(
+    private menuService: MenuService,
+    private route: ActivatedRoute,
+  ) {
     this.menuService.menuOpen$.subscribe((isOpen) => {
       this.isMenuOpen = isOpen;
     });
@@ -31,7 +34,8 @@ export class PrimeBuildLabComponent {
     });
   }
 
-
-
-
+  settings = {
+    counter: false,
+    plugins: [lgZoom],
+  };
 }

@@ -35,9 +35,8 @@
       min-height: 100px;
     }
     img {
-      //width: 100%;
-      width: 345px;
-      height: 370px;
+      height: auto;
+      max-width: 500px;
       opacity: 0;
       transform: translateX(-100%);
       transition: all 0.3s;
@@ -45,6 +44,7 @@
       @media (max-width: 1280px) {
         opacity: 1;
         transform: translateX(0);
+        width: 100%;
       }
     }
   }

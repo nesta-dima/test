@@ -8,9 +8,11 @@
     <ul>
       <li *ngFor="let item of value?.services" translate>{{item}}</li>
     </ul>
-    <p *ngFor="let image of value?.photos">
-      <img [src]="image">
-    </p>
+      <lightgallery [settings]="settings" class="gallery">
+        <a *ngFor="let image of value?.photos" class="image" [href]="image">
+          <img class="img-responsive" [src]='image' />
+        </a>
+      </lightgallery>
   </section>
   <app-footer></app-footer>
 </ng-container>
